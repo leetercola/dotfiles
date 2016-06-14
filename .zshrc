@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/a6001630/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -22,8 +22,7 @@ ZSH_THEME="agnoster"
 plugins=(git)
 
 # User configuration
-DEFAULT_USER="a6001630"
-export PATH="/Users/a6001630/.nvm/versions/node/v6.2.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="~/.nvm/versions/node/v6.2.1/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -31,15 +30,15 @@ bindkey -e
 bindkey '^[[1;9C' forward-word
 bindkey '^[[1;9D' backward-word
 
-source /Users/a6001630/.profile
+source ~/.profile
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source /Users/a6001630/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source ~/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ulimit -n 2000
 
 export PATH=$HOME/.binctl:$PATH
-[ -s "/Users/a6001630/.nvm/nvm.sh" ] && . "/Users/a6001630/.nvm/nvm.sh" # This loads nvm
+[ -s "~/.nvm/nvm.sh" ] && . "~/.nvm/nvm.sh" # This loads nvm
