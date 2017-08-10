@@ -1,0 +1,16 @@
+Unit]
+Description=The NGINX HTTP and reverse proxy server
+After=syslog.target network.target remote-fs.target nss-lookup.target
+
+[Service]
+User=root
+Group=root
+Type=forking
+PermissionsStartOnly=true
+ExecStartPre=/usr/sbin/nginx -t
+ExecStart=/usr/sbin/nginx
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target

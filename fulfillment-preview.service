@@ -1,0 +1,8 @@
+[Service]
+Environment=PATH=/home/ui/.nvm/versions/node/v6.11.0/bin/:$PATH
+ExecStart=/home/ui/webapps/lib-fulfillment-view/node_modules/.bin/webpack-dev-server --config ./webpack.config.js -w --content-base preview/ --host 0.0.0.0 --port 3300
+Environment=NODE_ENV=preview
+WorkingDirectory=/home/ui/webapps/lib-fulfillment-view/
+User=ui
+[Install]
+WantedBy=multi-user.target
