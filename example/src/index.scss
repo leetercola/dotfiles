@@ -1,0 +1,9 @@
+/* normal variables.scss imports would not include /dist/ */
+@import 'mdt-core-components/dist/variables.scss';
+@import 'bootstrap/scss/bootstrap.scss';
+
+body {
+  font-family: Effra, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+}
